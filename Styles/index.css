@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+body {
+    background-color: #292A2D;
+}
+
+/* Definicion de active */
+
+.active {
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: all 300ms;
+    font-size: 1.5em;
+}
+
+.contenedor-instrumento {
+    width: 100%;
+    height: 46vh;
+    background-color: #35363A;
+    padding: 1rem;
+
+    display: flex;
+
+}
+/* Estilos del display*/
+
+.display-instrumento {
+    width: 72vw;
+    height: 42vh;
+    background-color: #202124;
+
+    border-radius: 10px;
+}
+
+/* Estilos del teclado */
+
+.menu-instrumentos {
+    width: 25vw;
+    height: 42vh;
+    margin-left: 1vw;
+    background-color: #202124;
+    content: normal;
+
+    border-radius: 10px;
+}
+
+/* Estilos de los instrumentos que estan en el menu */
+.instrumento {
+    width: 25vw;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0px;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.instrumento:hover {
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: all 300ms;
+    font-size: 1.5em;
+}
+
+
+
+.texto-instrumento {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+}
+
+/*  Estilos del footer */
+#footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    height: 4vw;
+
+}
+
+#panic {
+    width: 5vw;
+    height: 4vh;
+    border: 1px solid white;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh;
+
+    color: white;
+    cursor: pointer;
+}
+
+#textFooter {
+    color: white;
+    padding-top: 2vh;
+}

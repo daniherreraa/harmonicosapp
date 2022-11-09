@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Styles/index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/Icon/instrumento-musical.png" />
+    <title>Armonicos</title>
+
+    
+  </head>
+  <body>
+
+    <!--Contenedor del primer instrumento-->
+    <div class="contenedor-instrumento" id="instrumento-uno">
+      <canvas class="display-instrumento" id="displayUno" width="500" height="500"></canvas>
+      <div class="menu-instrumentos" id="menu-uno">
+
+        <div class="instrumento piano" id="pianotecla" onclick='playPianoSong();' ondblclick="StopPianoSong()"><p class="texto-instrumento">🎹 Piano</p></div>
+        <div class="instrumento violin" id="violintecla" onclick='playViolinSong()'><p class="texto-instrumento">🎻 Violin</p></div>
+        <div class="instrumento saxophone" id="saxotecla" onclick="playSaxoSong()"><p class="texto-instrumento">🎷 Saxofón</p></div>
+      </div>
+    </div>
+    
+    <!--Contendor del segundo instrumento-->
+    <div class="contenedor-instrumento" id="instrumento-dos">
+      <canvas class="display-instrumento" id="displayDos"></canvas>
+
+      <div class="menu-instrumentos" id="menu-uno">
+        <div class="instrumento piano" id="pianoteclados" onclick="playPianoSongDos();;" ondblclick="justUnactiveDos()"><p class="texto-instrumento">🎹 Piano</p></div>
+        <div class="instrumento violin" id="violinteclados" onclick="playViolinSongDos()"><p class="texto-instrumento">🎻 Violin</p></div>
+        <div class="instrumento saxophone" id="saxoteclados" onclick="playSaxoSongDos()"><p class="texto-instrumento">🎷 Saxofón</p></div>
+      </div>
+
+    </div>
+    <div></div>
+
+    <!--Definiendo los sonidos-->
+    <!--Violin's Sound-->
+    <div>
+      <audio id="violinSound">
+        <source src="/Sounds/F-Violin.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!--Piano's Sound-->
+    <div>
+      <audio id="pianoSound">
+        <source src="/Sounds/FPiano.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!--Saxo's Sound-->
+    <div>
+      <audio id="saxoSound">
+        <source src="/Sounds/f-Saxo.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!--Footer-->
+    <div id="footer">
+      <div id="panic" onclick="panicFunction()">Panic!</div>
+      <p id="textFooter">⚠ ¡Usalo en caso de emergencia! ⚠</p>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+ 
+
+  </body>
+</html>
