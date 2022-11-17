@@ -12,7 +12,7 @@ const pianoTeclaDos = document.getElementById('pianoteclados');
 function playPianoSong() {
     const audioCtx = new AudioContext();
     const analyser = audioCtx.createAnalyser();
-    const pianoAudio = new Audio('/Sounds/Fpiano.mp3');
+    const pianoAudio = new Audio('./Sounds/Fpiano.mp3');
     const source = audioCtx.createMediaElementSource(pianoAudio);
 
     let canvas = document.getElementById('displayUno');
@@ -85,7 +85,7 @@ function justUnactive() {
 function playPianoSongDos() {
     const audioCtxdos = new AudioContext();
     const analyserdos = audioCtxdos.createAnalyser();
-    const pianoAudio = new Audio('/Sounds/Fpiano.mp3');
+    const pianoAudio = new Audio('./Sounds/Fpiano.mp3');
     const sourceDos = audioCtxdos.createMediaElementSource(pianoAudio);
 
     let canvas = document.getElementById('displayDos');
@@ -166,8 +166,8 @@ const violinTeclaDos = document.getElementById('violinteclados');
 function playViolinSong() {
     const audioCtx = new AudioContext();
     const analyser = audioCtx.createAnalyser();
-    const violinAudio = new Audio('/Sounds/F-Violin.mp3');
-    const source = audioCtx.createMediaElementSource(violinAudio);
+    const violinAudio = new Audio('Sounds/fviolin.mp3');
+    const source = audioCtx.createMediaElementSource(violinAudio); 
 
     let canvas = document.getElementById('displayUno');
     canvas.width = window.innerWidth;
@@ -224,7 +224,7 @@ renderFrame();
 function playViolinSongDos() {
     const audioCtx = new AudioContext();
     const analyser = audioCtx.createAnalyser();
-    const violinAudio = new Audio('/Sounds/F-Violin.mp3');
+    const violinAudio = new Audio('./Sounds/FViolin.mp3');
     const source = audioCtx.createMediaElementSource(violinAudio);
 
     let canvas = document.getElementById('displayDos');
@@ -287,7 +287,7 @@ const saxoTeclaDos = document.getElementById('saxoteclados');
 function playSaxoSong() {
     const audioCtx = new AudioContext();
     const analyser = audioCtx.createAnalyser();
-    const saxoAudio = new Audio('/Sounds/f-Saxo.mp3');
+    const saxoAudio = new Audio('./Sounds/f-Saxo.mp3');
     const source = audioCtx.createMediaElementSource(saxoAudio);
 
     let canvas = document.getElementById('displayUno');
@@ -345,7 +345,7 @@ renderFrame();
 function playSaxoSongDos() {
     const audioCtx = new AudioContext();
     const analyser = audioCtx.createAnalyser();
-    const saxoAudio = new Audio('/Sounds/f-Saxo.mp3');
+    const saxoAudio = new Audio('./Sounds/f-Saxo.mp3');
     const source = audioCtx.createMediaElementSource(saxoAudio);
 
     let canvas = document.getElementById('displayDos');
